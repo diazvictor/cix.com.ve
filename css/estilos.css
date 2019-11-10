@@ -31,6 +31,7 @@ h6 {
 .texto-blanco {
     font-weight: 700;
     color: #fff;
+    text-decoration: none;
 }
 
 .texto-negro {
@@ -102,7 +103,7 @@ h6 {
 /* ------------------------- */
 
 .header {
-	background: url("../images/slider3.jpg");
+	// background: url("../images/slider3.jpg");
 	background-position: center;
 }
 
@@ -136,5 +137,23 @@ h6 {
 	100% { transform: translateY(20px); }
 }
 
+/* ------------------------- */
+/* Slider */
+/* ------------------------- */
 
+.header article {
+	background-position: center;
+	background-size: cover;
+}
 
+.header article:nth-child(1) {
+	background-image: url("../images/slider3.jpg");
+}
+
+.header article:nth-child(2) {
+	background-image: url("../images/slider2.jpg");
+}
+
+.header article:nth-child(3) {
+	background-image: url("../images/slider4.jpg");
+}

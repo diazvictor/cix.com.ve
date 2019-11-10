@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'cix-broadband';
+  src:  url('../fonts/cix-broadband.eot?8tohtx');
+  src:  url('../fonts/cix-broadband.eot?8tohtx#iefix') format('embedded-opentype'),
+    url('../fonts/cix-broadband.ttf?8tohtx') format('truetype'),
+    url('../fonts/cix-broadband.woff?8tohtx') format('woff'),
+    url('../fonts/cix-broadband.svg?8tohtx#cix-broadband') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="cix-"], [class*=" cix-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cix-broadband' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cix-chevron-circle-down:before {
+  content: "\f13a";
+}
+.cix-facebook:before {
+  content: "\ea91";
+}
+.cix-instagram:before {
+  content: "\ea92";
+}
+.cix-twitter:before {
+  content: "\ea96";
+}
