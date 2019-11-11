@@ -3,7 +3,7 @@ var myFullpage = new fullpage('#fullpage',{
     //   :::::: Opciones Basicas
     // ──────────────────────────────────────────────────
     autoScrolling: true, // Se activa el scroll.
-    fitToSection: false, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
+    fitToSection: true, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
     fitToSectionDelay: 300, // Delay antes de acomodar la seccion automaticamente.
     easing: 'easeInOutCubic', // Funcion de tiempo de la animacion.
     scrollingSpeed: 700, // Velocidad del scroll. Valores: en milisegundos.
@@ -21,17 +21,21 @@ var myFullpage = new fullpage('#fullpage',{
 	// ──────────────────────────────────────────────────
     //   :::::: Secciones
     // ──────────────────────────────────────────────────
-    sectionsColor: ['#000', '#c2c2c2', '#000', '#000', '#000'], // Color de fondo de cada seccion.
+    sectionsColor: ['#000', '#fff', '#fff', '#fff', '#000'], // Color de fondo de cada seccion.
     verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
     // ──────────────────────────────────────────────────
     //   :::::: Slides
     // ──────────────────────────────────────────────────
     controlArrows: true, // Flechas del slide
-    slidesNavigation: false, // Indicadores del slide
+    slidesNavigation: true, // Indicadores del slide
     
     afterLoad: function(origin, destination) {
         if (destination.anchor == 'contactos') {
             document.querySelector('.contactos').querySelector('h2').style.opacity = 1;
+        } else if (destination.anchor == 'quienesomos') {
+            document.querySelector('.nav').style.background = "#000000";
+        } else if (destination.anchor == 'inicio') {
+            document.querySelector('.nav').style.background = "";
         }
     }
 });

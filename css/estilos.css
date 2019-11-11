@@ -3,9 +3,9 @@
 /* ------------------------- */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -43,11 +43,11 @@ h6 {
 /* ------------------------- */
 
 #fp-nav ul li a span {
-	background: #FFA500;
+    background: #FFA500;
 }
 
 #fp-nav ul li .fp-tooltip {
-	color: #FFA500;
+    color: #FFA500;
 }
 
 /* ------------------------- */
@@ -55,47 +55,48 @@ h6 {
 /* ------------------------- */
 
 .nav {
-	position: fixed;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 70;
-	width: 100%;
-	margin: 0;
-	padding: 10px 20px;
+    position: fixed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
 }
 
 .nav li,
 .nav a {
-	display: inline-block;
-	margin: 10px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-size: 19px;
-	color: #c2c2c2;
-	transition: .5s ease;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
 }
 
 .nav li.active {
-	border-bottom: 2px solid #FFA500;
+    border-bottom: 2px solid #FFA500;
 }
 
 .menu li a {
-	transition: .5s ease;
-	margin: 0;
-	padding: 0;
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li.active a {
-	color: #FFA500;
+    color: #FFA500;
 }
+
 .menu li.active a,
 .menu li:hover a {
-	color: #FFA500;
+    color: #FFA500;
 }
 
 /* ------------------------- */
@@ -103,28 +104,28 @@ h6 {
 /* ------------------------- */
 
 .header {
-	// background: url("../images/slider3.jpg");
-	background-position: center;
+    // background: url("../images/slider3.jpg");
+    background-position: center;
 }
 
 .header .contenedor-titulo {
-	text-align: center;
-	position: relative;
-	z-index: 99;
+    text-align: center;
+    position: relative;
+    z-index: 99;
 }
 
 .header .titulo {
-	font-size: 70px;
-	text-transform: uppercase;
+    font-size: 70px;
+    text-transform: uppercase;
 }
 
 .header .contenedor-icono {
-	position: absolute;
-	z-index: 99;
-	bottom: 3%;
-	left: 50%;
-	font-size: 40px;
-	animation: bajar-subir 1s ease infinite;
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
 }
 
 /* ------------------------- */
@@ -132,9 +133,17 @@ h6 {
 /* ------------------------- */
 
 @keyframes bajar-subir {
-	0% { transform: translateY(20px); }
-	25% { transform: translateY(0px); }
-	100% { transform: translateY(20px); }
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 /* ------------------------- */
@@ -142,20 +151,20 @@ h6 {
 /* ------------------------- */
 
 .header article {
-	background-position: center;
-	background-size: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .header article:nth-child(1) {
-	background-image: url("../images/slider3.jpg");
+    background-image: url("../images/slider3.jpg");
 }
 
 .header article:nth-child(2) {
-	background-image: url("../images/slider2.jpg");
+    background-image: url("../images/slider2.jpg");
 }
 
 .header article:nth-child(3) {
-	background-image: url("../images/slider4.jpg");
+    background-image: url("../images/slider4.jpg");
 }
 
 /* ------------------------- */
@@ -163,48 +172,119 @@ h6 {
 /* ------------------------- */
 
 .contactos .texto-naranja {
-	text-transform: uppercase;
-	font-size: 60px;
-	letter-spacing: 2px;
-	margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
 }
 
 .contactos h2 {
-	opacity: 0;
-	font-family: 'Oswald', sans-serif;
-	transition: .3s ease all;
+    opacity: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: .3s ease all;
 }
 
 .contactos .redes-sociales {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	font-size: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
 }
+
 .contactos .redes-sociales a {
-	display: flex;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	color: #30313a;
-	text-decoration: none;
-	align-items: center;
-	justify-content: center;
-	border-radius: 100px;
-	margin: 0 20px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #30313a;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
 }
 
-.contactos .facebook i { color: #3b5998; }
-.contactos .twitter i { color: #1da1f2; }
-.contactos .instagram i { color: #c13584; }
+.contactos .facebook i {
+    color: #3b5998;
+}
 
-.contactos .facebook:hover { background: #3b5998; }
-.contactos .twitter:hover { background: #1da1f2; }
-.contactos .instagram:hover { background: #c13584; }
+.contactos .twitter i {
+    color: #1da1f2;
+}
 
-.contactos .facebook:hover i { color: #fff; }
-.contactos .twitter:hover i { color: #fff; }
-.contactos .instagram:hover i { color: #fff; }
+.contactos .instagram i {
+    color: #c13584;
+}
+
+.contactos .facebook:hover {
+    background: #3b5998;
+}
+
+.contactos .twitter:hover {
+    background: #1da1f2;
+}
+
+.contactos .instagram:hover {
+    background: #c13584;
+}
+
+.contactos .facebook:hover i {
+    color: #fff;
+}
+
+.contactos .twitter:hover i {
+    color: #fff;
+}
+
+.contactos .instagram:hover i {
+    color: #fff;
+}
+
+/* ------------------------- */
+/* Responsive View */
+/* ------------------------- */
+
+@media screen and (max-width: 756px) {
+    .menu {
+        display: none;
+    }
+}
+
+/* ------------------------- */
+/* Estilos de la seccion ¿ Quienes somos ? */
+/* ------------------------- */
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.box {
+	border-radius: 3px;
+	padding-bottom: 0.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    transition: background .3s ease-in-out;
+}
+
+.box:hover {
+/*
+	box-shadow: 2px 2px 2px 2px grey;
+*/
+	background: #E5E5E5;
+}
+
+.box svg {
+	margin-bottom: 20px;
+}
+
+.box h1 {
+	margin-bottom: 20px;
+}
+
+.box p {
+	text-align: center;
+}
