@@ -2,6 +2,7 @@ var myFullpage = new fullpage('#fullpage',{
 	// ──────────────────────────────────────────────────
     //   :::::: Opciones Basicas
     // ──────────────────────────────────────────────────
+    
     autoScrolling: true, // Se activa el scroll.
     fitToSection: true, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
     fitToSectionDelay: 300, // Delay antes de acomodar la seccion automaticamente.
@@ -16,6 +17,7 @@ var myFullpage = new fullpage('#fullpage',{
     navigation: false, // Muesta la barra de navegación.
     menu: '#menu', // Menu de navegación.
     anchors: ['inicio', 'quienesomos', 'servicios', 'solucionesit', 'contactos'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+    scrollOverflow: true,
     navigationTooltips: ['Inicio', '¿ Quienes Somos ?', 'Servicios', 'Soluciones IT', 'Contactos'], // Tooltips que mostrara por cada boton.
     showActiveTooltip: false, // Mostrar tooltip activa.
 	// ──────────────────────────────────────────────────
@@ -35,6 +37,8 @@ var myFullpage = new fullpage('#fullpage',{
         } else if (destination.anchor == 'quienesomos') {
             document.querySelector('.nav').style.background = "#000000";
         } else if (destination.anchor == 'inicio') {
+            document.querySelector('.nav').style.background = "";
+        } else if (destination.anchor == 'contactos') {
             document.querySelector('.nav').style.background = "";
         }
     }
