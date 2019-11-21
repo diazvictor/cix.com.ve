@@ -4,7 +4,7 @@ var myFullpage = new fullpage('#fullpage',{
     // ──────────────────────────────────────────────────
     
     autoScrolling: true, // Se activa el scroll.
-    fitToSection: true, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
+    fitToSection: false, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
     fitToSectionDelay: 300, // Delay antes de acomodar la seccion automaticamente.
     easing: 'easeInOutCubic', // Funcion de tiempo de la animacion.
     scrollingSpeed: 700, // Velocidad del scroll. Valores: en milisegundos.
@@ -16,14 +16,13 @@ var myFullpage = new fullpage('#fullpage',{
     // ──────────────────────────────────────────────────
     navigation: false, // Muesta la barra de navegación.
     menu: '#menu', // Menu de navegación.
-    anchors: ['inicio', 'quienesomos', 'servicios', 'solucionesit', 'contactos'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+    anchors: ['item1', 'item2', 'item3', 'item4'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
     scrollOverflow: true,
-    navigationTooltips: ['Inicio', '¿ Quienes Somos ?', 'Servicios', 'Soluciones IT', 'Contactos'], // Tooltips que mostrara por cada boton.
-    showActiveTooltip: false, // Mostrar tooltip activa.
+    scrollBar: false,
 	// ──────────────────────────────────────────────────
     //   :::::: Secciones
     // ──────────────────────────────────────────────────
-    sectionsColor: ['#000', '#fff', '#fff', '#fff', '#000'], // Color de fondo de cada seccion.
+    sectionsColor: ['#000', '#fff', '#fff', '#F8F9FB'], // Color de fondo de cada seccion.
     verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
     // ──────────────────────────────────────────────────
     //   :::::: Slides
@@ -32,13 +31,13 @@ var myFullpage = new fullpage('#fullpage',{
     slidesNavigation: true, // Indicadores del slide
     
     afterLoad: function(origin, destination) {
-        if (destination.anchor == 'contactos') {
-            document.querySelector('.contactos').querySelector('h2').style.opacity = 1;
-        } else if (destination.anchor == 'quienesomos') {
+        // if (destination.anchor == 'item4') {
+            // document.querySelector('.item4').querySelector('h2').style.opacity = 1;
+        // } else
+        if (destination.anchor == 'item2' || destination.anchor == 'item3' || destination.anchor == 'item4') {
             document.querySelector('.nav').style.background = "#000000";
-        } else if (destination.anchor == 'inicio') {
-            document.querySelector('.nav').style.background = "";
-        } else if (destination.anchor == 'contactos') {
+        }
+        else if (destination.anchor == 'item1')  {
             document.querySelector('.nav').style.background = "";
         }
     }
