@@ -180,8 +180,11 @@ h6 {
 	text-align: center;
 }
 
+.mt-10 {
+	margin-top: 100px;
+}
+
 .item4-title {
-    margin-top: 100px;
     color: #f16821;
     font-size: 35px;
 }
@@ -219,6 +222,10 @@ h6 {
 .text-orange {
     color: #f16821;
     text-decoration: none;
+}
+
+.text-left {
+	text-align: left;
 }
 
 .input,
@@ -284,17 +291,15 @@ h6 {
         font-size: 40px;
     }
 
-    .separator {
+}
+
+@media screen and (max-width: 767px) {
+	.separator {
         display: block;
         margin-bottom: 20px;
     }
-
 }
-
 @media screen and (max-width: 668px) {
-    .menu {
-        display: none;
-    }
 
     .header .titulo {
         font-size: 45px;
@@ -315,6 +320,12 @@ h6 {
         right: 50px;
         border-width: 20px 0 20px 20px;
         border-color: transparent transparent transparent #fff;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .menu {
+        display: none;
     }
 }
 
